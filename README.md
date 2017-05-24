@@ -1,2 +1,2 @@
 # node-ffmpeg
-Custom ffmpeg package build from source with Node.js
+Custom ffmpeg container build with Node.js
