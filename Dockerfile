@@ -1,4 +1,7 @@
 FROM node:8.7-alpine
 MAINTAINER Quentin Jaccarino <quentin@tracktl.com>
 
-RUN apk update && apk add ffmpeg && rm -rf /var/cache/apk/*
+# The use of apk --no-cache avoids the need to use --update
+# and remove /var/cache/apk/* when done installing packages.
+# http://gliderlabs.viewdocs.io/docker-alpine/usage/
+RUN apk --no-cache add ffmpeg
