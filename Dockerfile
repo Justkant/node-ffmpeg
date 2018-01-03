@@ -1,4 +1,4 @@
-FROM node:9.2-alpine
+FROM node:9.3-alpine
 MAINTAINER Quentin Jaccarino <quentin@tracktl.com>
 
 # The use of apk --no-cache avoids the need to use --update
