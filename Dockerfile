@@ -1,4 +1,4 @@
-FROM node:10.11-alpine
+FROM node:10.15-alpine
 
 # The use of apk --no-cache avoids the need to use --update
 # and remove /var/cache/apk/* when done installing packages.
